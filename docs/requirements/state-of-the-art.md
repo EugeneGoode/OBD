@@ -212,3 +212,6 @@ Visual Insights
 - [Semantrum](https://promo.semantrum.net/uk/golovna/)
 - [Neticle Media Intelligence](https://neticle.com/mediaintelligence/ru/)
 - [YouScan](https://youscan.io/)
+- [SemanticForce](https://www.semanticforce.net)
+- [IQBuzz](https://iqbuzz.pro/)
+- [StarComment](https://starcomment.io/)
