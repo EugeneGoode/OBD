@@ -228,7 +228,6 @@
 
 !["Модератор"](http://www.plantuml.com/plantuml/png/lLH1Ji9G4Dt_KynEMS01kZ1SnKXL4cI19N5Ph0iNHX9282Okz0OViDe8_Rt2p1KyYM-gXAGDYPZ2eit_C_FUcvc-j7aTdFQ2_bN7UFpCZjyubf2jtBAJqADwhtrn6THFw9X7Ca4sGtRE2V89yGTRplH2dB8bf9N0ei0YaCgG49WToPW_0R2rBHeT_xmeORUA81dd8Wk92a9VuTEFb4GrOohfc1eDRUmLa042CQyKbUN42tOw0h1BUPGnoPtEmok9e9FpAmPTPZWdG48_OuVgeLvg7latWTzjcKe7FqZ7Pay2L5SVb4soNeOofmNcYZ_rb6UvSiplU4g5qFEetJthz5k-sRNJVqZinHmlnUBgfznLnFnbBR_C8qx06AkLrWQQvpjoCD5oWzMLEP981cfFkKTqeY1vW1jmd6uCNMxtiFfDlF0J_WO0)
 
-!["Користвувач"](../images/Користувач.png?raw=true)
 
 -------------
 
