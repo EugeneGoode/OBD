@@ -82,7 +82,7 @@
 - Система тимчасово не доступна
 - Незаповнені обов’язкові поля
    
-!["Діаграма 1"](../images/dia12.png?raw=true)
+!["Діаграма 1"](http://www.plantuml.com/plantuml/png/VL9DJi9W4DtFARxW0atg1UY6kFOI9DIV17-2xQuB43KkI8Y6m4PDk46fe5_uALTuSoFVYBAgBfhCp9jvy-Rrgz_4ZNQSNBGanGiAp33N3ZAzHQ6TLBvHIVUEpq_FugDM4gMOm6kN-1mhPAdKC66IMpjBQwnruFJEKk9Uy8Of2kHL7U0J2mjrvB1XiDH1JJYH4SYH1QpQQiECIn-qBnKY7ZD-AntPMkqxZawhEiI2MQ_YzflHIIDfnUxGnUqaEWY4UZmsWJEHU8SFd2qsLcEoZTOXU2LS_2_FBZ4lVYXMTYBpJ3jXkM4rZBSd8CUwn91GIXmSOseiB7piHaYSCVHwxxJdy8HXoCvdUEIO4zprRRQYMJ9zorz0O6uM7DOkmv4-ihgpSCPm7Fxrpw-kfHvTDlaglW00)
 
 -------------
     
@@ -115,7 +115,7 @@
 - Система тимчасово не доступна
 - Незаповнені обов’язкові поля
     
-!["Діаграма 2"](../images/dia22.png?raw=true)    
+!["Діаграма 2"](http://www.plantuml.com/plantuml/png/VLBDJi9W4Bn_J_453sXINu1UY6TVWeJwa-1FiBtr0AB60mdH4BYe2MzGiCG6-CehpBwHyssq7aGFJNOxExCpcwzv4xUwSNBHCIbUK2B7Kdh8v1Qbz5AZg4dtZizFp-AZJXAbcA6GFl4bDiXIqy2CpSAFyvU3av6LEzyIBmpUCAVieYuZV63bIvbOR5ciPTGmP6G45iW2_lMhYQcMFCZGr8WKoFbjPEBNoj2IEg_B62jsWvhTRqSdhQGJsqCRTvFe833qKs0RM3NvZYAmkfYggkGq7gsz4Yx_jwT9U8ilYOsFo3wJNiZaKtLB3joExE7kapRmxCUbNr6ucUdWh0mgkWn8_tLhtQYpo2noDeuJzvw89un35I_ePqcmabUB9EMQOFqD6BrtIRBqMKxa4Uxdo3dBQVZNgxYwDiteiirtyma0)    
 
 -------------
         
@@ -137,7 +137,7 @@
 ***Виключні ситуації:*** 
 - Система тимчасово не доступна
 
-!["Діаграма 3"](../images/dia3.png?raw=true)
+!["Діаграма 3"](http://www.plantuml.com/plantuml/png/XP5DIlH0443tTOgGxnQJpV2jlOJWeCBuWsPsMIGJK1U2uYA26_46RUn0cAGxLtXr8zjsT3QAgwgcNh_ggfvVvliN-UfaAGNtM4PjSDfefMijCRh6Qrb8f6J60pslsqAVCEAnT3iI8pmnXECLJkjFoc4IDZWy4nkj9OqUYs6W_zMKPbByspi-FCh_BrUBWXVwZsVHCM8AcV4S-GuNOXMZqxlGALwFhDQq6Bt621QVyAQbraoXO_eJfqsQRQTiwR0xwOIdrGQBPsJuAWYJba4SHgr2skZDz_Pk4sn87xE_DdjsBlF5wK7uWtS0)
     
 -------------
 
@@ -159,7 +159,7 @@
 ***Виключні ситуації:***
 - Система тимчасово не доступна
     
-!["Діаграма 4"](../images/dia4.png?raw=true)
+!["Діаграма 4"](http://www.plantuml.com/plantuml/png/XP4zJiD048NxEOLbRa6QY9fB8141KlWHEDqMTYm11HA8maWq4JTOZ2rMYNVt2czknDC6S0DADMlFDz_Rd-bDSNHTBCxdOl243eCsyDfefKijONM9eAMHHCa-dk7m_jrm6GO4plGZ2IjunOQVjzJKMyh3PbYp14IijPOSAw8Eds1Bx-3-imKC-KJCtk7PoMbnC5_C3Dv8StFeYLl3BQtIH0_FMgNgzP5vIP1OhT6c72lqXmmVMl9VP6R-HwXZvFQaBNNTg8n4Msr01ySsFmr1r99Q7hVYij7xtnjyoD1n-JBPTRkNLpATNHpp7Ru0)
     
 -------------
 
@@ -192,7 +192,7 @@
 - Система тимчасово недоступна
 - Незаповнені обов’язкові поля
 
-!["Діаграма 5"](../images/dia5.png?raw=true)
+!["Діаграма 5"](http://www.plantuml.com/plantuml/png/XPBDJi9G48Ntzobkui8DJm0RujgNC96e2Vv4oguBIaLS69guA8c9FoG-mAL0g0NgAyoyaMT6o4rer0sPcTCvzviJcftWv3ReNhPDICzKSezoZhZFCMNaU1WQrKruS7nnTXuSjRkja2O_tz22rkH2KwS9caoMCThGXXFBTz92pmszqfHAoWuveIKLKd9gwGl5YfEwePbKCiRkmbA1yOY7Ca3BqLOh3HvnbZxHOSCgNuzJ_DvpokEQWUL29oNDBGmS8EEQLQgPZZVwB3_Wke9ZGozGod_evc87hxuNFI5QJ-WQlsLOfp4vzTGRAnbXiHhgsuxK0cpAgTwG6R6nO7QOEbfRWODXpWCZ4z_guH81CebajG7J3nGhVWHSRnjSik-0v_PWInvvM3HYz0vzgIO3CE8RS2e_ajfUaYEet73a3zijFq7BC9ZxBC0AlrZXr4IFXUeib08w615zDTu_Sky4rpUcsRewnV_x6m00)
     
 -------------
     
@@ -222,7 +222,7 @@
 
 - Незаповнені обов’язкові поля
 
-!["Діаграма 6"](../images/dia6.png?raw=true)
+!["Діаграма 6"](http://www.plantuml.com/plantuml/png/VP7DIiDG48NtynGNNBXHiDjcKrpx4e95XVg3fhiisiOV5q9G9051eMzmUsqqf6dw2cVUoCE0tPIwEtDdldlECBtR-FWc7buC9C4xMXsXqh5ED4M0ryT4h2_9pj7vwLbyE1Zs4qnXCoZHm2VInPH5CBZ44alDdDvPsQ0IV6A65c5NC_oW1gNc3YkAXMPTuU23vkHgUDVPxnm8Fb2Y_PyoWmdQFMVD1dHcxNKKRTkaYmBUVWXqsqnAS7Er0ZEKjjZt6i4SdhBIUz7KuGLl3ap7vo-wrLGX8lgA2e7GV0sQkKrQvCLVGx2YHUiqrJ5bhazypItzCzqeYsZxVQwkfTU_FE4DVm40)
 
 !["Адміністратор"](../images/Адміністратор.png?raw=true)
 
