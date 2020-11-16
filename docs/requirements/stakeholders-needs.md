@@ -280,7 +280,7 @@
 - Система повинна мати вхід в особистий кабінет 
 - Система повинна надсилати користувачам сповіщення з категорій, які вони обрали
 - Відправлення сповіщень месенджерами повинно бути інтегроване у систему
-
+!["Діаграма"](http://www.plantuml.com/plantuml/png/fP8zJiD058HxJl4weCWDKkGgI8GVAL24fQCWYn1qGGYvi90GDrZMjcICRQumxqRCsiLAi395EllDpFT6prvScQErkRvOxI57hxUeTQDMx-3Xz47cDxEPu1KzIbHKdThWcZ8_qTfgXawpGOsX0pphFPLIu8MJ3R4V8mCrFWKDN1YWuovxA7FYKei8UcV43qh5HLi20nS5BGsV_6JuZTF7u1HIdE0RrG0gyANRq8wrzlM59FilAm_PyHtTMANzVIrABMfY9i-JXiKgaPBw8kbqyxTpnAoM9oPHQ1Va-lpqp2JhBPQNn_pBVW00)
 -----------
 
 ## Практичність
