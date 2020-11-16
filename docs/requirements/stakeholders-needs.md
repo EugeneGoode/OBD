@@ -54,6 +54,39 @@
 
 ### Сценарії
 
+***ID:*** Mn.pr1
+
+***Назва:*** Основний сценарій
+
+***Учасники:*** Користувач, система, модератор
+
+***Передумови:*** Відсутні
+
+***Результат:*** Створення результату і його вивід на екран користувача
+
+***Основний сценарій:*** 
+1. Користувач заходить у створений особистий кабінет
+2. Система підготовлює форму з наступними полями:
+    1. Головне ключове слово та його варіації (обов’язкове)
+    2. Додаткові ключові слова
+    3. Період часу (обов’язкове)
+    4. Регіон пошуку (обов’язкове)
+    5. Ресурси пошуку (обов’язкове)
+3. Користувач заповнює форму
+4. Система перевіряє запит на наявність заборонених слів
+5. Система відправляє повідомлення модератору
+6. Модератор приймає міри в разі наявнсті заборонених слів
+6. Система проводить пошук по базам даних заданих ресурсів
+7. Система фільтрує дані за заповненою користувачем формою
+8. Система виконує розрахунок статистики
+9. Система виводить результат на екран користувача
+
+***Виключні ситуації:***
+- Система тимчасово недоступна
+- Незаповнені обов’язкові поля
+
+-------------
+
 ***ID:*** AD.0b1
 
 ***Назва:*** Додавання об’єкту
@@ -224,7 +257,7 @@
 
 !["Діаграма 6"](http://www.plantuml.com/plantuml/png/VP7DIiDG48NtynGNNBXHiDjcKrpx4e95XVg3fhiisiOV5q9G9051eMzmUsqqf6dw2cVUoCE0tPIwEtDdldlECBtR-FWc7buC9C4xMXsXqh5ED4M0ryT4h2_9pj7vwLbyE1Zs4qnXCoZHm2VInPH5CBZ44alDdDvPsQ0IV6A65c5NC_oW1gNc3YkAXMPTuU23vkHgUDVPxnm8Fb2Y_PyoWmdQFMVD1dHcxNKKRTkaYmBUVWXqsqnAS7Er0ZEKjjZt6i4SdhBIUz7KuGLl3ap7vo-wrLGX8lgA2e7GV0sQkKrQvCLVGx2YHUiqrJ5bhazypItzCzqeYsZxVQwkfTU_FE4DVm40)
 
-!["Адміністратор"](http://www.plantuml.com/plantuml/png/jPCnJiD044Nxd69AKjW7S85o5QH4W0GX2hQWZ9C22YGGXIaHDrXM6x4AtkGAVsx4Z1E1fHXO2fhrMl_jy_V87bpcHzEyE3_hPNY0GmsF0Cybpta6mtEiUPPHKaoIGph02pOQOeqLOQNPZbt02dt35Mp_5zNmucgyBwlbuh3y8hUgo4TICZqzFiaRxICyNdSUtta4HiHn7AMDE5Nni-PuGsWohySwUijztSzeT9sFniDUn5l-s7vVBzsZg7PpnHqCthzlRLgTutXAYycdtKfORjcDi9OhE9s4A9O827mlWGw7UC6bR2k-HP1Lntr7SB9zQbVumx0frK_glweCP97_umC0)
+!["Адміністратор"](http://www.plantuml.com/plantuml/png/jPD1IiD058RtFSLRsaNc046aLn5QLD1QwWHTDkr25uBY8Yx56yHXYaFDj5VuturypnODjEguS3EPy7_pvSyZwLtOmx4jpauxEUxXqI0W8d39KvwWvYcMFCafAqRP0UtX6IiDiSI2iD1imyxWXBxc2gxxYwf_VZdSbZLoyPX_aMjLuYDfFnkV71rRzU810IyRKTXv1hMOqpWo7sAZuYVDyOge6O8Usr5SxfjkJeChEnZsEqcl-LFzRR-KJwBQrHNtgF66yEs1Lkaqdamn-hGx2SirknBMSGMlen35716HxoJGwH3Fk9HjnJU8ikgyRmbUje-j2d-PDXdzgFwhIayM-KFU0G00)
 
 !["Модератор"](http://www.plantuml.com/plantuml/png/lLH1Ji9G4Dt_KynEMS01kZ1SnKXL4cI19N5Ph0iNHX9282Okz0OViDe8_Rt2p1KyYM-gXAGDYPZ2eit_C_FUcvc-j7aTdFQ2_bN7UFpCZjyubf2jtBAJqADwhtrn6THFw9X7Ca4sGtRE2V89yGTRplH2dB8bf9N0ei0YaCgG49WToPW_0R2rBHeT_xmeORUA81dd8Wk92a9VuTEFb4GrOohfc1eDRUmLa042CQyKbUN42tOw0h1BUPGnoPtEmok9e9FpAmPTPZWdG48_OuVgeLvg7latWTzjcKe7FqZ7Pay2L5SVb4soNeOofmNcYZ_rb6UvSiplU4g5qFEetJthz5k-sRNJVqZinHmlnUBgfznLnFnbBR_C8qx06AkLrWQQvpjoCD5oWzMLEP981cfFkKTqeY1vW1jmd6uCNMxtiFfDlF0J_WO0)
 
