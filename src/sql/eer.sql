@@ -3,20 +3,20 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 -- -----------------------------------------------------
--- Schema Statt
+-- Schema mydb
 -- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `Statt` ;
+DROP SCHEMA IF EXISTS `mydb` ;
 
 -- -----------------------------------------------------
--- Schema Statt
+-- Schema mydb
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `Statt` DEFAULT CHARACTER SET utf8 ;
-USE `Statt` ;
+CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
+USE `mydb` ;
 
 -- -----------------------------------------------------
--- Table `Statt`.`User`
+-- Table `mydb`.`User`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Statt`.`User` (
+CREATE TABLE IF NOT EXISTS `mydb`.`User` (
   `id` INT NOT NULL,
   `password` TEXT NULL,
   `email` TEXT NULL,
@@ -29,16 +29,16 @@ CREATE TABLE IF NOT EXISTS `Statt`.`User` (
   INDEX `fk_User_beat1_idx` (`beat_id GUID` ASC) VISIBLE,
   CONSTRAINT `fk_User_beat1`
     FOREIGN KEY (`beat_id GUID`)
-    REFERENCES `Statt`.`beat` (`id GUID`)
+    REFERENCES `mydb`.`beat` (`id GUID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `Statt`.`ServiceNode`
+-- Table `mydb`.`ServiceNode`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Statt`.`ServiceNode` (
+CREATE TABLE IF NOT EXISTS `mydb`.`ServiceNode` (
   `url` TEXT NOT NULL,
   `name` TEXT NULL,
   `description` TEXT NULL,
@@ -48,9 +48,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `Statt`.`Source`
+-- Table `mydb`.`Source`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Statt`.`Source` (
+CREATE TABLE IF NOT EXISTS `mydb`.`Source` (
   `url` TEXT NOT NULL,
   `password` TEXT NULL,
   `username` TEXT NULL,
@@ -61,16 +61,16 @@ CREATE TABLE IF NOT EXISTS `Statt`.`Source` (
   INDEX `fk_Source_beat_idx` (`beat_id GUID` ASC) VISIBLE,
   CONSTRAINT `fk_Source_beat`
     FOREIGN KEY (`beat_id GUID`)
-    REFERENCES `Statt`.`beat` (`id GUID`)
+    REFERENCES `mydb`.`beat` (`id GUID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `Statt`.`ServiceChain`
+-- Table `mydb`.`ServiceChain`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Statt`.`ServiceChain` (
+CREATE TABLE IF NOT EXISTS `mydb`.`ServiceChain` (
   `id` INT NOT NULL,
   `next` TEXT NULL,
   `ServiceNode_url` TEXT NOT NULL,
@@ -80,21 +80,21 @@ CREATE TABLE IF NOT EXISTS `Statt`.`ServiceChain` (
   INDEX `fk_ServiceChain_ServiceChain1_idx` (`ServiceChain_id` ASC) VISIBLE,
   CONSTRAINT `fk_ServiceChain_ServiceNode1`
     FOREIGN KEY (`ServiceNode_url`)
-    REFERENCES `Statt`.`ServiceNode` (`url`)
+    REFERENCES `mydb`.`ServiceNode` (`url`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_ServiceChain_ServiceChain1`
     FOREIGN KEY (`ServiceChain_id`)
-    REFERENCES `Statt`.`ServiceChain` (`id`)
+    REFERENCES `mydb`.`ServiceChain` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `Statt`.`Stream`
+-- Table `mydb`.`Stream`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Statt`.`Stream` (
+CREATE TABLE IF NOT EXISTS `mydb`.`Stream` (
   `name` INT NOT NULL,
   `description` TEXT NULL,
   `etc` TEXT NULL,
@@ -103,16 +103,16 @@ CREATE TABLE IF NOT EXISTS `Statt`.`Stream` (
   INDEX `fk_Stream_ServiceChain1_idx` (`ServiceChain_id` ASC) VISIBLE,
   CONSTRAINT `fk_Stream_ServiceChain1`
     FOREIGN KEY (`ServiceChain_id`)
-    REFERENCES `Statt`.`ServiceChain` (`id`)
+    REFERENCES `mydb`.`ServiceChain` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `Statt`.`BeatType`
+-- Table `mydb`.`BeatType`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Statt`.`BeatType` (
+CREATE TABLE IF NOT EXISTS `mydb`.`BeatType` (
   `name` TEXT NOT NULL,
   `installer` TEXT NULL,
   PRIMARY KEY (`name`))
@@ -120,9 +120,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `Statt`.`beat`
+-- Table `mydb`.`beat`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Statt`.`beat` (
+CREATE TABLE IF NOT EXISTS `mydb`.`beat` (
   `id GUID` INT NOT NULL,
   `interval` INT NULL,
   `Stream_name` INT NOT NULL,
@@ -132,12 +132,12 @@ CREATE TABLE IF NOT EXISTS `Statt`.`beat` (
   INDEX `fk_beat_BeatType1_idx` (`BeatType_name` ASC) VISIBLE,
   CONSTRAINT `fk_beat_Stream1`
     FOREIGN KEY (`Stream_name`)
-    REFERENCES `Statt`.`Stream` (`name`)
+    REFERENCES `mydb`.`Stream` (`name`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_beat_BeatType1`
     FOREIGN KEY (`BeatType_name`)
-    REFERENCES `Statt`.`BeatType` (`name`)
+    REFERENCES `mydb`.`BeatType` (`name`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -149,14 +149,14 @@ SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
 START TRANSACTION;
-USE `Statt`;
-INSERT INTO `Statt`.`Account` (`email`, `login`, `password`, `state`, `avatar`, `role`) VALUES ('zhenyahudenko@gmail.com', 'Zhenya', 'qwerty123', 'active', 'null', 'Admin');
+USE `mydb`;
+INSERT INTO `mydb`.`Account` (`email`, `login`, `password`, `state`, `avatar`, `role`) VALUES ('zhenyahudenko@gmail.com', 'Zhenya', 'qwerty123', 'active', 'null', 'Admin');
 
 -- -----------------------------------------------------
 -- Data for table `mydb`.`access`
 -- -----------------------------------------------------
 START TRANSACTION;
-USE `Statt`;
-INSERT INTO `Statt`.`access` (`role`) VALUES ('Admin', 2, 1);
+USE `mydb`;
+INSERT INTO `mydb`.`access` (`role`) VALUES ('Admin', 2, 1);
                
 COMMIT;
