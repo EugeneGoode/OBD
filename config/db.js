@@ -1,7 +1,7 @@
 module.exports = {
-    DATABASE_NAME: 'regent_system',
+    DATABASE_NAME: 'Statt_',
     DATABASE_USERNAME: 'root',
-    DATABASE_PASSWORD: '00133700',
+    DATABASE_PASSWORD: '13706901',
     DATABASE_HOST: 'localhost',
     DATABASE_DRIVER: 'mysql',
 };
