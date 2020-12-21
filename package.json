@@ -1,7 +1,7 @@
 {
-    "name": "regent-system",
+    "name": "Statt",
     "version": "1.0.0",
-    "description": "Regent System - analytical media content service",
+    "description": "Statt is a data collecting and analazing web-service",
     "main": "index.js",
     "directories": {
         "doc": "docs",
@@ -14,14 +14,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/vercabra/regent-system.git"
+        "url": "git+https://github.com/EugeneGoode/OBD"
     },
-    "author": "IO-93, Team #3",
+    "author": "IO-92's group №3",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/vercabra/regent-system/issues"
+        "url": "https://github.com/EugeneGoode/OBD/issues"
     },
-    "homepage": "https://github.com/vercabra/regent-system#readme",
+    "homepage": "https://github.com/EugeneGoode/OBD#readme",
     "dependencies": {
         "chalk": "^4.1.0",
         "cli-table3": "^0.6.0",
