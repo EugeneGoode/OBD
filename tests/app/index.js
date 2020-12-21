@@ -17,20 +17,20 @@ const toTable =  (data, ...fields) => {
 
 
 (async () => {
-    const accountsList = await models.Account.findAll();
-    console.log(chalk.green(`Accounts list`));
+    const accountsList = await models.Profile.findAll();
+    console.log(chalk.green(`Profiles list`));
     console.log(toTable(accountsList, "role", "email", "login", "password", "state", "avatar"));
 
-    const accessList = await models.Access.findAll({
+    const accessList = await models.Entry.findAll({
         include: [{
-            model: models.Account,
+            model: models.Profile,
             through: {
                 attributes: ['role']
             }
         }]
     });
-    console.log(chalk.green(`Accesses List`));
+    console.log(chalk.green(`Entries List`));
 
-    console.log(accessList.map(access => `Access: ${access.role}
-${toTable(access.Account, "role", "Access.dataValues.role")}`).join("\n"));
+    console.log(accessList.map(entry => `Entry: ${entry.role}
+${toTable(access.Profile, "role", "Access.dataValues.role")}`).join("\n"));
 })();
